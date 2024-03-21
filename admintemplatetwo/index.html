@@ -19,11 +19,14 @@
   <link href="css/style.css" rel="stylesheet" text="style.css" />
 
 </head>
-<body>
+<body >
  
   <!-- start site setting -->
-    <div>
-
+    <div id="sitesettings" class="sitesettings">
+      <div class="sitesettings-item">
+        <a href="javascript:void(0);" id="sitetoggle" class="sitetoggle"><i class="fas fa-cog ani-rotates"></i>
+        </a>
+      </div>
     </div>
   <!-- end site setting -->    
 
@@ -34,45 +37,107 @@
         
         <nav class="navbar navbar-expand-md navbar-light">
           
-          <button type="button" class="navbar-toggler ms-auto mb-2" data-bs-toggle="collapse" data-bs-target="#nav" >
+          <button type="button" class="navbar-toggler ms-auto mb-2 " data-bs-toggle="collapse" data-bs-target="#nav" >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="navbar-collapse collapse" id="nav">
             <div class="container-fluid">
               <div class="row">
+
                 <!-- start left sidebar -->
+
                 <div class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto sidebars">
                   <ul class="navbar-nav flex-column mt-4">
                     <li class="nav-item nav-categories">Main</li>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Dashboard</a> </li>
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Dashboard</a> </li>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Form</a> </li>
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#download" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Download <i class="fas fa-angle-left mores "></i> </a> 
+                      <!-- (d-flex justify-content-end) fas fa-angle-left mores mar htae lal ya dl -->
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Widgets</a> </li>
+                      <ul class="collapse" id="download">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Education</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Software </a>  </li>
+                      </ul>
+
+                     </li>
+
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#form" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Form <i class="fas fa-angle-left mores "></i> </a> 
+
+                      <ul class="collapse" id="form">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Att Form</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Leave Form </a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Enrolls </a>  </li>
+                      </ul>
+
+                    </li>
+
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Widgets</a> </li>
 
                     <li class="nav-item nav-categories">UI Features</li>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Articles</a> </li>
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#articles" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Articles <i class="fas fa-angle-left mores "></i></a> 
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Students</a> </li>
+                      <ul class="collapse" id="articles">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Post</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Accounancement </a>  </li>
+                      </ul>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Popups</a> </li>
+                    </li>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Apps</a> </li>
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#students" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Students <i class="fas fa-angle-left mores "></i></a> 
+
+                      <ul class="collapse" id="students">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> All Students</a>  </li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Popups</a> </li>
+
+                     <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#app" ><i class="fas fa-tachometer-alt fa-md me-3"></i> App <i class="fas fa-angle-left mores "></i></a> 
+
+                      <ul class="collapse" id="app">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Contact</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Todo </a>  </li>
+                      </ul>
 
                     <li class="nav-item nav-categories">Data Representation</li>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Fixed Analysis</a> </li>
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#analysis" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Fixed Analysis <i class="fas fa-angle-left mores "></i> </a> 
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Addon</a> </li>
+                      <ul class="collapse" id="analysis">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Days</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Categories </a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Stages</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Status</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Tags </a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Types </a>  </li>
+                      </ul>
 
-                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link p-3 mb-2 sidebarlinks"><i class="fas fa-tachometer-alt fa-md me-3"></i> Maps</a> </li>
+                    </li>
 
+                    <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#addon" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Addon <i class="fas fa-angle-left mores "></i> </a> 
 
+                      <ul class="collapse" id="addon">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> City</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Country </a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Gender</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Relatives</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Roles </a>  </li>
+                      </ul>
 
+                    </li>
 
+                     <li class="nav-item "><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#map" ><i class="fas fa-tachometer-alt fa-md me-3"></i> Maps <i class="fas fa-angle-left mores "></i> </a> 
+
+                      <ul class="collapse" id="map">
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> Google Map</a>  </li>
+                        <li> <a herf="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> </i> vector Map </a>  </li>
+                        
+                      </ul>
+
+                    </li>
 
 
                   </ul>
@@ -84,67 +149,1303 @@
                   <div class="row">
 
                     <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+
                         <!-- search -->
-                          <form class="" action="" method="">
+                          <form class="me-auto" action="" method="">
                               <div class="input-group">
-                                <input type="text" name="search" id="search" class="form-control border-0 shadow-none" placeholder="search Something" autocomplete="off" />
-                                <div>
+                                <input type="text" name="search" id="search" class="form-control border-0 shadow-none" placeholder="search Something ..." autocomplete="off" />
+                                <div class="input-group-append">
                                   <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                                 </div>
                               </div>
                           </form>
                         <!-- search -->
 
+                        <!-- notify & userlogout -->
+                                                    
+                           <ul class="navbar-nav pe-4  me-sm-5 ">
+                            <div class="d-flex">
+                              <!-- notify -->
+                            <li class="nav-item dropdowns">
+
+                              <a href="javascript:void(0);" class="nav-link dropbtns" onclick="dropbtn(event)" > 
+                                <i class="fas fa-bell"></i>
+                                <span class="badge bg-danger">5+</span>
+                              </a>
+  
+                              <div class="dropdown-contents mydropdowns ">
+                                <h6>Alert Center</h6>
+  
+  
+                                <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <i class="fas fa-file-alt text-dark"></i>
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted">3 May 2023</p>
+                                      <i>A new member created</i>
+                                    </div>
+                                </a>
+  
+  
+                                 <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <i class="fas fa-database text-warning"></i>
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted">3 May 2023</p>
+                                      <i>Some of your data are missing</i>
+                                    </div>
+                                </a>
+  
+                                 <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <i class="fas fa-user text-info"></i>
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted">3 May 2023</p>
+                                      <i>A new member created</i>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="small text-muted text-center">Some All Notification</a>
+                                
+                              </div>
+  
+                              </li>
+                              <!-- notify -->
+  
+                              <!-- message -->
+                              <li class="nav-item dropdowns mx-3">
+                              <a href="javascript:void(0);" class="nav-link dropbtns " onclick="dropbtn(event)"> 
+                                <i class="fas fa-envelope"></i>
+                                <!-- <span class="badge bg-danger">5+</span> -->
+                              </a>
+  
+                              <div class="dropdown-contents mydropdowns ">
+                                <h6>Message Center</h6>
+  
+  
+                                <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <img src="assets/img/users/user1.jpg" class="rounded-circle" width="30" alt="user1" />
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted"> Lorem Ipsumis simply dummy text of the printing and typesetting industry. </p>
+                                      <i>Ms.July -25m ago</i>
+                                    </div>
+                                </a>
+  
+  
+                                <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <img src="assets/img/users/user2.jpg" class="rounded-circle" width="30" alt="user2" />
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted"> Lorem Ipsumis simply dummy text of the printing and typesetting industry. </p>
+                                      <i>Mr.Anton -40m ago</i>
+                                    </div>
+                                </a>
+  
+                                <a href="javascript:void(0);" class="d-flex" >
+                                  <div class="me-3  ">
+                                    <img src="assets/img/users/user3.jpg" class="rounded-circle" width="30" alt="user3" />
+                                  </div>
+                                  <div>
+                                      <p class="small text-muted"> Lorem Ipsumis simply dummy text of the printing and typesetting industry. </p>
+                                      <i>Ms.PaPa -55m ago</i>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="small text-muted text-center">Read More Message</a>
+  
+  
+                              </div>
+                              </li>
+                              <!-- message -->
+  
+                              <!-- userlogout -->
+                              <li class="nav-item dropdown">
+  
+                              <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" >
+                                <span class="text-muted small me-2">Admin</span>
+                                <img src="assets/img/users/user1.jpg" class="rounded-circle" width="25" alt="user1" />
+                              </a>
+  
+                              <div class="dropdown-menu">
+                                <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user fa-sm text-muted me-2"></i>Profiles</a>
+                                <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user fa-sm text-muted me-2"></i>Setting</a>
+                                <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user fa-sm text-muted me-2"></i>Activity</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user fa-sm text-muted me-2"></i>Logout</a>
+                              </div>
+                              </li>
+                              <!-- userlogout -->
+                            </div>
+                          </ul>
 
                         <!-- notify & userlogout -->
-                        <!-- notify & userlogout -->
+
+                        <!-- mobile close button -->
+                          <button type="button" class="close-btns" data-bs-toggle="collapse" data-bs-target="#nav">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        <!-- mobile close button -->
+
                     </nav>
 
                   </div>
                 </div>
                 <!-- end top sidebar -->
+                
               </div>
             </div>
           </div>
         </nav>
         
 
-
-       
     </div>
     <!-- end left navbar -->
 
     <!-- start content area -->
-    <section>
+   <!--  <section>
       
-    </section>
+    </section> -->
     
     <section>
-        <!-- start shortcut area -->
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="col-lg-10 col-md-9 ms-auto">
+            
+            <!-- start shortcut area -->
+          <div class="row pt-md-5 mt-md-3"> 
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-primarys">
+              <div class="card-body">
+                <div class="row align-items-center">
+
+                  <div class="col">
+                    <h5 class="text-xs fw-bold text-primary text-uppercase mb-1"> Sales (monthly)</h5>
+                    <p class="h5 text-muted">$ 50,000</p>
+                  </div>
+
+                  <div class="col-auto">
+                    <i class="fas fa-calendar fa-2x text-secondary"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-successes">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <h5 class="text-xs fw-bold text-primary text-uppercase mb-1"> Rental Fee (annual)</h5>
+                    <p class="h5 text-muted">$ 400,000</p>
+                  </div>
+
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-secondary"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-infos">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <h5 class="text-xs fw-bold text-primary text-uppercase mb-1"> Debt Collect</h5>
+                    <div class="row">
+                        <div class="col-auto">
+                           <p class="h5 text-muted">60%</p>
+                           
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm">
+                            <div class="progress-bar bg-info" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  ></div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                   <div class="col-auto">
+                          <i class="fas fa-calendar fa-2x text-secondary"></i>
+                   </div>
+                  
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-warnings">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <h5 class="text-xs fw-bold text-primary text-uppercase mb-1"> Request message</h5>
+                    <p class="h5 text-muted">25</p>
+                  </div>
+
+                  <div class="col-auto">
+                   <!-- <i class="fa-solid fa-message"></i> -->
+                   <!-- <i class="fa-regular fa-message fa-2x text-secondary"></i>
+                   <i class="fas fa-calendar "></i> -->
+                   <i class="fas fa-comments fa-2x text-secondary"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
         <!-- end shortcut area -->
 
+         <!-- start carousel area -->
+        <div class="row ">
+          <div class="col-md-3 col-sm-6 mb-2">
+            <div class="card "> 
+              <div class="card-body">
+                  <h6 class="card-title">Sales</h6>
+              </div>
 
-        <!-- start carousel area -->
+              <div id= "sales" class="carousel slide ms-3" data-bs-ride="carousel">
+                   <div class="carousel-inner ">
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                    <!-- <button class="btn btn-outline-secondary btn-sm d-flex align-items-center">                    -->
+
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#sales"data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                     <button type="button" class="carousel-control-next" data-bs-target="#sales"data-bs-slide="next" >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- 29CA -->
+                  
+                 </div>
+                  
+              </div>
+
+              </div>
+            </div>
+         
+           <div class="col-md-3 col-sm-6 mb-2">
+            <div class="card ">
+              <div class="card-body">
+                  <h6 class="card-title">Sales</h6>
+              </div>
+
+              <div id= "sales" class="carousel slide ms-3" data-bs-ride="carousel">
+                   <div class="carousel-inner ">
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                    <!-- <button class="btn btn-outline-secondary btn-sm d-flex align-items-center">                    -->
+
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#sales"data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                     <button type="button" class="carousel-control-next" data-bs-target="#sales"data-bs-slide="next" >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- 29CA -->
+                  
+                 </div>
+                  
+              </div>
+
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6 mb-2">
+            <div class="card ">
+              <div class="card-body">
+                  <h6 class="card-title">Sales</h6>
+              </div>
+
+              <div id= "sales" class="carousel slide ms-3" data-bs-ride="carousel">
+                   <div class="carousel-inner ">
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                    <!-- <button class="btn btn-outline-secondary btn-sm d-flex align-items-center">                    -->
+
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#sales"data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                     <button type="button" class="carousel-control-next" data-bs-target="#sales"data-bs-slide="next" >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- 29CA -->
+                  
+                 </div>
+                  
+              </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-2">
+            <div class="card ">
+              <div class="card-body">
+                  <h6 class="card-title">Sales</h6>
+              </div>
+
+              <div id= "sales" class="carousel slide ms-3" data-bs-ride="carousel">
+                   <div class="carousel-inner ">
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item active">
+
+                      <div class="d-flex">
+                        <h3 class="me-3">$58,664</h3>
+                        <h5 class="text-danger">+3.2%</h5>
+                      </div>
+
+                    <div class="mb-3">
+                      <p class="fw-bold text-small">Revenue <span class="text-muted">($157 last month)</span> </p>
+                    </div>
+
+                    <div class="py-2">
+                      <button class="btn btn-outline-secondary btn-sm">
+                    <!-- <button class="btn btn-outline-secondary btn-sm d-flex align-items-center">                    -->
+
+                      <i class="fas fa-calendar-alt me-1"></i>
+                      <span class="">Jan</span>
+                      </button>
+                    </div>
+
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#sales"data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                     <button type="button" class="carousel-control-next" data-bs-target="#sales"data-bs-slide="next" >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- 29CA -->
+                  
+                 </div>
+                  
+              </div>
+
+              </div>
+            </div> 
+          
+         
+
+
+        </div>
         <!-- end carousel area -->
-
         <!-- start gauge area -->
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-primarys">
+              <div class="card-body">
+                <div class="row align-items-center">
+
+                  <div class="col">
+                    <div class="d-flex justify-content-between align-items-centerl">
+                    <h6 class="text-xs fw-bold text-primary text-uppercase mb-1"> Users</h6>
+                    <p class="h5 text-muted"> 50</p>
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                    <div id="gaugeuser">
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-successes">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <div class="d-flex justify-content-between align-items-centerl">
+                    <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Customers</h6>
+                    <p class="h5 text-muted"> 40</p>
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                     <div id="gaugecustomers">
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-infos">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <div class="d-flex justify-content-between align-items-centerl">
+                      <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Employees</h6>
+                      <p class="h5 text-muted"> 50</p>
+                    </div> 
+                    
+                  </div>
+                  <div class="col-auto">
+                    <div id="gaugeemployees">
+                      
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-2">
+            
+            <div class="card shadow py-2 border-left-infos">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  
+                  <div class="col">
+                    <div class="d-flex justify-content-between align-items-centerl">
+                      <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Invester</h6>
+                      <p class="h5 text-muted"> 70</p>
+                    </div> 
+                    
+                  </div>
+                  <div class="col-auto">
+                    <div id="gaugeinvesters">
+                      
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
         <!-- end gauge area -->
 
         <!-- start expenses area -->
+
+        <div class="row">
+          
+          <div class="col-md-7 mb-3">
+
+           <div class="card shadow">
+
+            <div class="card-header py-2">
+              <h6 class="text-primary">Expenses</h6>
+            </div>
+
+            <div class="card-body">
+              
+              <h4 class="small">Other Expenses 20%</h4>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width:20%" aria-valuenow="20" aria-valuemin="0"  aria-valuemax="100" >
+                </div>
+              </div>
+
+              <h4 class="small">Other Expenses 40%</h4>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-warning" style="width:40%" aria-valuenow="40" aria-valuemin="0"  aria-valuemax="100" >
+                </div>
+              </div>
+
+              <h4 class="small">Other Expenses 60%</h4>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-primary" style="width:60%" aria-valuenow="60" aria-valuemin="0"  aria-valuemax="100" >
+                </div>
+              </div>
+
+              <h4 class="small">Other Expenses 80%</h4>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-info" style="width:80%" aria-valuenow="80" aria-valuemin="0"  aria-valuemax="100" >
+                </div>
+              </div>
+
+              <h4 class="small">Other Expenses 100%</h4>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width:100%" aria-valuenow="100" aria-valuemin="0"  aria-valuemax="100" >
+                </div>
+              </div>
+
+            </div>
+             
+           </div>
+            
+
+          </div>
+          <div class="col-md-5 mb-3">
+            <div class="card shadow">
+              <div class="card-header py-2">
+                <h6 class="text-primary">Revenvue Sources</h6>
+
+              </div>
+              <div class="card-body">
+                <div style="height: 250px; display: flex; justify-content: center; align-items:center ;">
+                  <canvas id="mypiechart"></canvas>
+                </div>
+                <div class="small text-center">
+                  <span><i class="fas fa-circle text-warning"></i>Return Item</span>
+                  <span class="mx-2"><i class="fas fa-circle text-success"></i>shop Item</span>
+                  <span><i class="fas fa-circle text-danger"></i>online Item</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+        </div>
         <!-- end expenses area -->
 
+
         <!-- start earning area -->
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center py-2">
+                <h6>Earning Overview</h6>
+                <div class="dropdown">
+                  <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" >
+                    <i class="fas fa-ellipsis-v fa-sm"></i>
+                  </a>
+                  <div class="dropdown-menu shadow">
+                      <div class="dropdown-header">Qucik Action</div>
+                      <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                      <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="javascript:void(0);" class="dropdown-item">View Report</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="card-body">
+                 <div id="curve_chart" style="width:100%; "></div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5> Reginal Team</h5>
+
+                  <div class="d-flex align-items-center border-bottom py-2">
+                    <img src="assets/img/users/user1.jpg" class="rounded-circle" width="40" height="40" alt="user1" />
+
+                    <div class="ms-3">
+                      <h6 class="mb-1">Ms. July</h6>
+                      <small class="text-muted mb-0"><i class="fas fa-map-market-alt"></i>Mandalay City, Myanmar</small>
+                    </div>
+
+                    <div class="badge bg-success p-1 ms-auto">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+
+                   <div class="d-flex align-items-center border-bottom py-2">
+                    <img src="assets/img/users/user2.jpg" class="rounded-circle" width="40" height="40" alt="user1" />
+
+                    <div class="ms-3">
+                      <h6 class="mb-1">Mr. Anton</h6>
+                      <small class="text-muted mb-0"><i class="fas fa-map-market-alt"></i>Mandalay City, Myanmar</small>
+                    </div>
+
+                    <div class="badge bg-success p-1 ms-auto">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+
+                   <div class="d-flex align-items-center py-2 ">
+                    <img src="assets/img/users/user3.jpg" class="rounded-circle" width="40" height="40" alt="user1" />
+
+                    <div class="ms-3">
+                      <h6 class="mb-1">Ms. Lily</h6>
+                      <small class="text-muted mb-0"><i class="fas fa-map-market-alt"></i>Mandalay City, Myanmar</small>
+                    </div>
+
+                      <div class="badge bg-success p-1 ms-auto ">
+                        <i class="fas fa-plus"></i>
+                 
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+          </div>
+        </div>
         <!-- end earning area -->
 
         <!-- start result area -->
+        <div class="row">
+            <div class="col-12 mb-3">
+              <div class="card">
+                <div class="row">
+
+                  <div class="col-md-3 col-sm-6">
+
+                    <div class="card-body">
+
+                      <div class="d-flex justify-content-center align-items-center" >
+                        <i class="fas fa-users fa-2x text-primary me-4"></i>
+
+                        <div class="text-center">
+                          <p class="text-dark mb-0"></p>
+                          <h5 class="fw-bold text-dark mb-0">56,320</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="col-md-3 col-sm-6">
+
+                    <div class="card-body">
+
+                      <div class="d-flex justify-content-center align-items-center" >
+                        <i class="fas fa-check-circle fa-2x text-primary me-4"></i>
+                        
+                        <div class="text-center">
+                          <p class="text-dark mb-0"></p>
+                          <h5 class="fw-bold text-dark mb-0">3,200</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="col-md-3 col-sm-6">
+
+                    <div class="card-body">
+
+                      <div class="d-flex justify-content-center align-items-center" >
+                        <i class="fas fa-trophy fa-2x text-primary me-4"></i>
+                        
+                        <div class="text-center">
+                          <p class="text-dark mb-0"></p>
+                          <h5 class="fw-bold text-dark mb-0">16,00</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="col-md-3 col-sm-6">
+
+                    <div class="card-body">
+
+                      <div class="d-flex justify-content-center align-items-center" >
+                        <i class="fas fa-star fa-2x text-primary me-4"></i>
+                        
+                        <div class="text-center">
+                          <p class="text-star mb-0"></p>
+                          <h5 class="fw-bold text-dark mb-0">12,860</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
         <!-- end result area -->
 
         <!-- start analysis area -->
+        
+
+        <div class="row">
+          
+          <div class="col-md-4 mb-3">
+
+           <div class="card shadow">
+
+            <div class="card-body">
+              
+              <div>
+                <h5 class="small">Sales Analysis Trend</h5>
+              </div>
+
+             <div>
+              <div class="d-flex justify-content-between">
+                <small>Order Value</small>
+                <small> 120.8%</small>
+              </div>
+              <div class="progress mb-3">
+                   <div class="progress-bar bg-danger" style="width:20%" aria-valuenow="20" aria-valuemin="0"  aria-valuemax="100" >
+                   </div>
+                </div>
+             </div>
+
+               <div>
+              <div class="d-flex justify-content-between">
+                <small>Order Value</small>
+                <small> 120.8%</small>
+              </div>
+              <div class="progress mb-3">
+                   <div class="progress-bar bg-warning" style="width:70%" aria-valuenow="70" aria-valuemin="0"  aria-valuemax="100" >
+                   </div>
+                </div>
+             </div>
+
+               <div>
+              <div class="d-flex justify-content-between">
+                <small>Order Value</small>
+                <small> 120.8%</small>
+              </div>
+              <div class="progress mb-3">
+                   <div class="progress-bar bg-success" style="width:80%" aria-valuenow="80" aria-valuemin="0"  aria-valuemax="100" >
+                   </div>
+                </div>
+             </div>
+
+               <div>
+              <div class="d-flex justify-content-between">
+                <small>Total Products</small>
+                <small>325.2%</small>
+              </div>
+              <div class="progress mb-3">
+                   <div class="progress-bar bg-info" style="width:50%" aria-valuenow="50" aria-valuemin="0"  aria-valuemax="100" >
+                   </div>
+                </div>
+             </div>
+
+               <div>
+              <div class="d-flex justify-content-between">
+                <small>Quantity</small>
+                <small> 25.60%</small>
+              </div>
+              <div class="progress mb-3">
+                   <div class="progress-bar bg-danger" style="width:70%" aria-valuenow="70" aria-valuemin="0"  aria-valuemax="100" >
+                   </div>
+                </div>
+             </div>
+
+            </div>
+             
+           </div>
+            
+
+          </div>
+          <div class="col-md-8 mb-3">
+            <div class="card shadow">
+              <div class="card-body">
+                <div>
+                  <h5>Project Status</h5>
+                </div>
+                <div class="">
+                  <table class="table">
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <img src="assets/img/clients/client1.png" class="me-3" width="100" alt="client1" />
+                          <div>
+                            <div>Comapny</div>
+                            <div class="fw-bold mt-1">Sony Electronic</div>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        Sales
+                        <div class="fw-bold mt-1">$32250</div>
+                      </td> 
+
+                      <td>
+                        Status
+                        <div class="fw-bold text-success mt-1">88%</div>
+                      </td> 
+
+                      <td>
+                        Deadline
+                        <div class="fw-bold  mt-1">10 June 2023</div>
+                      </td> 
+
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i>edit</button>
+                      </td> 
+                       
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <img src="assets/img/clients/client2.png" class="me-3" width="100" alt="client2" />
+                          <div>
+                            <div>Comapny</div>
+                            <div class="fw-bold mt-1">MI Electronic</div>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        Sales
+                        <div class="fw-bold mt-1">$5250</div>
+                      </td> 
+
+                      <td>
+                        Status
+                        <div class="fw-bold text-success mt-1">72%</div>
+                      </td> 
+
+                      <td>
+                        Deadline
+                        <div class="fw-bold  mt-1">10 June 2023</div>
+                      </td> 
+
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i>edit</button>
+                      </td> 
+                       
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <img src="assets/img/clients/client3.png" class="me-3" width="100" alt="client3" />
+                          <div>
+                            <div>Comapny</div>
+                            <div class="fw-bold mt-1">Vivo Electronic</div>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        Sales
+                        <div class="fw-bold mt-1">$1250</div>
+                      </td> 
+
+                      <td>
+                        Status
+                        <div class="fw-bold text-success mt-1">38%</div>
+                      </td> 
+
+                      <td>
+                        Deadline
+                        <div class="fw-bold  mt-1">10 June 2023</div>
+                      </td> 
+
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i>edit</button>
+                      </td> 
+                       
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="d-flex">
+                          <img src="assets/img/clients/client4.png" class="me-3" width="100" alt="client4" />
+                          <div>
+                            <div>Comapny</div>
+                            <div class="fw-bold mt-1">Oppo Electronic</div>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        Sales
+                        <div class="fw-bold mt-1">$5250</div>
+                      </td> 
+
+                      <td>
+                        Status
+                        <div class="fw-bold text-success mt-1">78%</div>
+                      </td> 
+
+                      <td>
+                        Deadline
+                        <div class="fw-bold  mt-1">10 June 2023</div>
+                      </td> 
+
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i>edit</button>
+                      </td> 
+                       
+                    </tr>
+
+                  </table>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+        </div>
+        
         <!-- end analysis area -->
 
         <!-- start todo area -->
+        <div class="row mt-3"> 
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+
+                <div class="d-flex justify-content-between">
+                  <h4 class="card-title">To Do List</h4>
+                  <div class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-ellipsis-v fa-sm"></i></a>
+                    <div class="dropdown-menu shadow">
+                      <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                      <a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                      <a href="javascript:void(0);" class="dropdown-item">Something Else</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control form-control-sm" name="" placeholder="Add List here" />
+                  <button type="submit" class="btn btn-primary btn-sm form-group-text">Add To list</button>
+                </div>
+
+                <div class="mt-3">
+                  <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+                <ul class="list-unstyled">
+
+                  <li class="d-flex justify-content-between">
+                    <label>
+                      <input type="checkbox" class="checkbox" name=""/> <span class="ms-2">when an unknwon printer took a gallery of type.</span>
+                    </label>
+                    <i class="fas fa-trash-alt text-muted"></i>
+                  </li>
+
+                  <li class="d-flex justify-content-between">
+                    <label>
+                      <input type="checkbox" class="checkbox" name=""/> <span class="ms-2">when an unknwon printer took a gallery of type.</span>
+                    </label>
+                    <i class="fas fa-trash-alt text-muted"></i>
+                  </li>
+
+                  <li class="d-flex justify-content-between">
+                    <label>
+                      <input type="checkbox" class="checkbox" name=""/> <span class="ms-2">when an unknwon printer took a gallery of type.</span>
+                    </label>
+                    <i class="fas fa-trash-alt text-muted"></i>
+                  </li>
+
+                  <li class="d-flex justify-content-between">
+                    <label>
+                      <input type="checkbox" class="checkbox" name=""/> <span class="ms-2">when an unknwon printer took a gallery of type.</span>
+                    </label>
+                    <i class="fas fa-trash-alt text-muted"></i>
+                  </li>
+
+                  <li class="d-flex justify-content-between">
+                    <label>
+                      <input type="checkbox" class="checkbox" name=""/> <span class="ms-2">when an unknwon printer took a gallery of type.</span>
+                    </label>
+                    <i class="fas fa-trash-alt text-muted"></i>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="card shadow">
+
+              <div class="card-header">
+                <h5 class="text-primary m-0">Illustrations</h5>
+              </div>
+              <div class="card-body">
+                <div class="text-center">
+                  <img src="assets/img/etc/ser2.jpg" class="" width="150" alt="student group" />
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+                <a href="javascript:void(0);">Browse Illustrations on more</a>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
         <!-- end todo area -->
 
+
+          </div>
+
+        </div>
+      </div>
+        
     </section>
   <!-- end content area-->
 
@@ -152,14 +1453,60 @@
   <!-- start footer area-->
     <footer>
       
-      <!-- start right navbar -->
-      <div>
-        
-      </div>
-      <!-- end right navbar -->
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-lg-10 col-md-9 ms-auto">
+          
+           <div class="row border-top pt-3 mt-3">
+
+             <div class="col-md-6 text-center">
+
+               <ul class="list-inline" >
+                 <li class="list-inline-item me-2">
+                   <a href="javascript:void(0);" class="text-dark" >Data Land Technology Co.,Ltd</a>
+                 </li>
+                 <li class="list-inline-item me-2">
+                   <a href="javascript:void(0);" class="text-dark">About</a>
+                 </li>
+                 <li class="list-inline-item me-2">
+                   <a href="javascript:void(0);" class="text-dark">Contact</a>
+                 </li>
+               </ul>
+
+             </div>
+             <div class="col-md-6 text-center">
+              <p> &copy; <span id="getyear"></span>Copyright. All Rights Reserved.</p>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
 
     </footer>
   <!-- end footer area-->
+
+  <!-- start right navbar -->
+      <div class="right-panels">
+        <h6>Custom your Template</h6>
+        <p class="small">Hifi!! here you can change your theme</p>
+        <hr/>
+        <div class="themecolors">
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-primary shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-secondary shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-info shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-success shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-warning shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-danger shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-muted shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-white shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-dark shadow fa-lg"></i></a>
+            <a href="javascript:void(0);"> <i class=" fas fa-square text-light shadow fa-lg"></i></a>
+        </div>
+      </div>
+
+
+  <!-- end right navbar -->
 
 
     
@@ -175,14 +1522,21 @@
   <!-- jquery ui  css1 js1-->
     <script src="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.js" type="text/javascript"></script>
 
-    <!-- google chart js1-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- google chart js1-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <!-- chartjs js1 -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- chartjs js1 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Raphael must be included before justgage -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
   <!-- custom js -->
   <script src="js/app.js" type="text/javascript" ></script>
 
 </body>
 </html>
 <!-- 22P2 -->
+<!-- 23MN -->
+
+<!-- 13FN -->
